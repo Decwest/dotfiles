@@ -13,3 +13,9 @@ git clone https://github.com/Decwest/dotfiles.git
 cd dotfiles
 git config --global commit.template ~/dotfiles/.commit_template
 ```
+
+### Register aliases
+```shell
+source ~/dotfiles/.aliases
+echo "source ~/dotfiles/.aliases" >> ~/.bashrc
+```
