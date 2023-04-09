@@ -8,6 +8,11 @@ git clone https://github.com/Decwest/dotfiles.git
 
 ## Usage
 
+### Install all
+```shell
+source install.sh
+```
+
 ### git template
 ```shell
 cd dotfiles
