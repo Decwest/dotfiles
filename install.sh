@@ -6,7 +6,7 @@ source ~/dotfiles/.aliases
 echo "source ~/dotfiles/.aliases" >> ~/.bashrc
 
 # install tools
-source ~/dotfiles/install/mxergo_shrtcut.sh
+source ~/dotfiles/install/mxergo_shortcut.sh
 source ~/dotfiles/install/terminator.sh
 source ~/dotfiles/install/chrome.sh
 source ~/dotfiles/install/vscode.sh
