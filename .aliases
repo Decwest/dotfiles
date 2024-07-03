@@ -4,7 +4,7 @@
 alias sm_update="git submodule update --init --recursive"
 # git submodule delete
 sm_delete() {
-  git submodule deinit -f $1
-  git rm -f $1
+  git submodule deinit -rf $1
+  git rm -rf $1
   rm -rf .git/modules/$1
 }
