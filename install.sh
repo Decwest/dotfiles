@@ -12,6 +12,7 @@ source ~/dotfiles/install/chrome.sh
 source ~/dotfiles/install/vscode.sh
 source ~/dotfiles/install/docker.sh
 source ~/dotfiles/install/nvidia_docker.sh
+source ~/dotfiles/install/boot_repair.sh
 
 # Ubuntuのバージョンを取得
 ubuntu_version=$(lsb_release -r | awk '{print $2}')
