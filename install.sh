@@ -11,7 +11,15 @@ source ~/dotfiles/install/terminator.sh
 source ~/dotfiles/install/chrome.sh
 source ~/dotfiles/install/vscode.sh
 source ~/dotfiles/install/docker.sh
-source ~/dotfiles/install/nvidia_docker.sh
+
+# GPUがあるかどうかを確認
+if lspci | grep -i nvidia > /dev/null 2>&1; then
+    echo "NVIDIA GPU detected, installing nvidia-docker."
+    source ~/dotfiles/install/nvidia_docker.sh
+else
+    echo "No NVIDIA GPU detected, skipping nvidia-docker installation."
+fi
+
 source ~/dotfiles/install/boot_repair.sh
 
 # Ubuntuのバージョンを取得
@@ -32,4 +40,3 @@ if [ $ubuntu_version_num -le 2004 ]; then
     # 実行したいコマンドをここに記述
     source ~/dotfiles/install/ros1.sh
 fi
-
