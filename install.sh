@@ -21,6 +21,8 @@ else
 fi
 
 source ~/dotfiles/install/boot_repair.sh
+source ~/dotfiles/install/task.sh
+source ~/dotfiles/install/uv.sh
 
 # Ubuntuのバージョンを取得
 ubuntu_version=$(lsb_release -r | awk '{print $2}')
